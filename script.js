@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <p>${blockData.caption}</p>
                 <div class="comment-section">
-                    <input type="text" placeholder="Add a comment...">
+                    <input type="text" name="comment" id="new-comment" placeholder="Add a comment...">
                     <button class="send-comment"><i class='bx bxs-send' style='color:#ffffff'></i></button>
                 </div>
                 <div class="comments"></div>
