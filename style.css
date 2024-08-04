@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Caladea&family=IBM+Plex+Serif&family=Roboto+Slab:wght@300&family=Sacramento&family=Young+Serif&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: "Sacramento", cursive;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-family: "Young Serif", serif;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    font-family: "IBM Plex Serif", serif;
+  }
+  
+  p,
+  span {
+    font-family: "Caladea", serif;
+  }
+  
+  a {
+    font-family: "Roboto Slab", serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--anchorColor);
+    font-weight: bold;
+  }
+
+section{
+    width: 70vw;
+    margin: 0px auto;
+}
+
+.profile{
+    height: calc(60vh - 0.2vw);
+    background: url("./diprati2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.profile .profile-image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -100px;
+    left: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 20px 5px #4391f8;
+}
+
+.profile .profile-image img{
+    height: 200px;
+    width:  200px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.about{
+    margin-top: 100px;
+    padding: 50px 0px;
+}
+
+.about > *{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.about > h1{
+    margin-bottom: 20px;
+}
+
+.about p{
+    margin-top: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.main .block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.main .block > *{
+    width: 60%;
+}
+
+.main .block img{
+    
+    height: 100%;
+    width: 100%;
+}
+
+.main .block .interaction{
+    margin: 10px 0px;
+    font-size: 25px;
+    display: flex;
+}
+
+.main .block .interaction i{
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.main .block p{
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.like, .comment {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.like-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.like-count {
+    font-size: 12px;
+    color: #000;
+    margin-top: 2px; 
+    margin-right: 15px;
+}
+
+.comment-section {
+    display: none;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.comment-section input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.comment-section button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #068550;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-section button:hover {
+    background-color: #20a867;
+}
+
+.comments {
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #031842;
+    background-color: #5bc0f7;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+    section{
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    html{
+        font-size: 80%;
+    }
+    
+    .profile {
+        background-position: 100% 0;
+    }
+
+    .profile .profile-image {
+        left: calc(50% - 100px);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .profile {
+        height: calc(40vh - 0.2vw);
+    }
+
+    .main .block > *{
+        width: 80%;
+    }
+    .about > *{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width: 500px){
+    section{
+        width: 90vw;
+    }
+
+    .main .block > *{
+        width: 90%;
+    }
+}
