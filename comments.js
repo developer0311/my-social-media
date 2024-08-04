@@ -1,19 +1,3 @@
-// const comments = {
-//     "1": ["Hello", "Great work"],
-//     "2": ["Nice photo"]
-// };
-
-// // Function to add a comment
-// function addComment(blockId, commentText) {
-//     if (!comments[blockId]) {
-//         comments[blockId] = [];
-//     }
-//     comments[blockId].push(commentText);
-// }
-
-// // Expose the comments object and addComment function globally
-// window.comments = comments;
-// window.addComment = addComment;
 
 
 const LOCAL_STORAGE_KEY = 'comments';
