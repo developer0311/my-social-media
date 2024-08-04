@@ -1,3 +1,7 @@
+let likeNotification = new Audio("like.mp3");
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const mainContent = document.getElementById("main-content");
     
@@ -58,15 +62,18 @@ function displayComments() {
 }
 
 function addInteractionListeners() {
-    let like = document.querySelectorAll(".like");
-
-    like.forEach((elem) => {
+    // Add event listeners to all "like" buttons
+    document.querySelectorAll(".like").forEach((elem) => {
         elem.addEventListener("click", (e) => {
+            // Toggle like button style
             elem.classList.toggle("bx-heart");
             elem.classList.toggle("bxs-heart");
-            elem.style.color = elem.classList.contains("bxs-heart")
-                ? "#ed0000"
-                : "black";
+            elem.style.color = elem.classList.contains("bxs-heart") ? "#ed0000" : "black";
+            
+            // Play sound notification
+            likeNotification.play().catch((error) => {
+                console.error("Error playing sound:", error);
+            });
         });
     });
 
