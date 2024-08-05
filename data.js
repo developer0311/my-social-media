@@ -14,7 +14,7 @@ const data = {
     "3": {
         "name": "Diprati",
         "image": "diprati3.jpeg",
-        "caption": ""
+        "caption": "In the presence of Ma Durga, where dreams meet destiny 🕊️🤍"
     }
 }
 
